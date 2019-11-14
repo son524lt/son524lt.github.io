@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="vi" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Thuật toán nho nhỏ :D</title>
+    <link rel="stylesheet" href="./master.css">
+  </head>
+  <body>
+    <b>Thêm số hạng cho dãy</b>
+    <form onsubmit="return add()">
+      <input id="num" name="id" type="number" value="">
+      <input class="show" type="submit"  value="Thêm">
+    </form>
+    <button class="hide" id="appear1" type="button" onclick="del1()">Xóa số đầu</button>
+    <button class="hide" id="appear2" type="button" onclick="del2()">Xóa số cuối</button>
+    <h3>Dãy số đã điền:<p id="str">(chưa có số)</p></h3>
+    <button class="show" type="button" onclick="check()">Kiểm tra</button>
+    <h3 id="kq"></h3>
+    <button class="hide" id="appear3" type="button" onclick="del3()">Xóa kết quả</button>
+  </body>
+  <script src="./main.js"></script>
+</html>

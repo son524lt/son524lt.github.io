@@ -1,0 +1,99 @@
+* {
+  font-family: cursive;
+  user-select: none;
+}
+
+body {
+  margin: 0;
+}
+h1 {
+  text-align: center;
+  padding-top: 70px;
+}
+
+h5 {
+  text-align: center;
+  font-style: italic;
+  position: fixed;
+  bottom: 10px;
+  right: 5%;
+  border: 3px blue solid;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+footer {
+  text-align: center;
+  border: 2px solid black;
+  width: 100%;
+  background-color: #DDD;
+
+}
+
+#insta {
+  letter-spacing: 2px;
+  color: orange;
+  font-style: italic;
+  text-decoration: none;
+}
+
+#fb {
+  letter-spacing: 2px;
+  color: blue;
+  font-style: italic;
+  text-decoration: none;
+}
+
+#qr-code {
+  text-align: center;
+  margin: 10px 25%;
+  width: 50%;
+  border: 5px solid purple;
+}
+
+.icon {
+  height: 25px;
+}
+
+.others {
+  text-align: center;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+#m {
+  font-size: 30px;
+}
+
+.go {
+  display: inline-block;
+  text-decoration: none;
+  color: #FFF;
+  padding: 15px;
+  border: solid #FFF 2px;
+  margin: 0 20px;
+  cursor: default;
+}
+
+.go:hover {
+  opacity: 1;
+  background-color: white;
+  color: black;
+}
+
+.button {
+  text-align: center;
+  width: 100%;
+}
+
+.intro {
+  margin: 10px;
+  font-size: 20px;
+}
+
+#email {
+  display: inline-block;
+  user-select: all;
+}

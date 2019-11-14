@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tìm ước chung lớn nhất của 2 số nguyên dương</title>
+    <link rel="stylesheet" href="../counting/master.css">
+    <script type="text/javascript" src="./main.js"></script>
+  </head>
+  <body>
+    <h2>Điền 2 số tự nhiên khác 0:</h2>
+    <form onsubmit="return sub()">
+      <p> Số thứ nhất:
+      <input id="num0" type="number" value=""> <button onclick="add(0)" class="show" type="button" name="button">Nhập</button>
+      <p> Số thứ hai:
+      <input id="num1" type="number" value=""> <button onclick="add(1)" class="show" type="button" name="button">Nhập</button>
+      <br>
+      <input type="submit" class="show" name="find" value="Tìm">
+    </form>
+    <h3>Số thứ nhất:<p id="in0" class="str">(chưa có số)</p><button onclick="back(0)" id="back0" class="hide" type="button">Xóa</button></h3>
+    <h3>Số thứ hai:<p id="in1" class="str">(chưa có số)</p><button onclick="back(1)" id="back1" class="hide" type="button">Xóa</button></h3>
+    <h3 id="res"><br></h3>
+    <p>
+      <button id="del" onclick="del()" class="hide" type="button" name="delete">Xóa kết quả</button>
+    </p>
+  </body>
+  <script src="./main.js"></script>
+</html>

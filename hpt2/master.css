@@ -1,0 +1,19 @@
+.block {
+  text-align: left;
+  display: inline-block;
+}
+
+.an {
+  display: inline-block;
+  font-size: 25px;
+  margin: 0;
+}
+
+.m {
+  display: block;
+}
+
+.pt {
+  display: block;
+  margin: 0;
+}
