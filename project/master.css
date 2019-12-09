@@ -36,6 +36,10 @@ h2 {
 
 }
 
+.speed {
+  text-align: right;
+}
+
 audio {
   width: 900px;
 }
