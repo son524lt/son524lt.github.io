@@ -2,8 +2,18 @@
   user-select: none;
 }
 
+a {
+  color: red;
+  font-size: 20px;
+  text-decoration: none;
+  background-color: white;
+  border: 2px blue solid;
+  border-radius: 50px;
+  padding: 5px;
+}
+
 h1 {
-  margin-left: 15px;
+  text-align: center;
 }
 
 h2 {
@@ -11,6 +21,7 @@ h2 {
 }
 
 .content {
+  margin: 0 50px;
   text-align: center;
 }
 
@@ -26,7 +37,7 @@ h2 {
 }
 
 audio {
-  width: 1000px;
+  width: 900px;
 }
 
 @media screen and (max-width: 1000px) {
