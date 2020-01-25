@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="vi" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Windows 10 Home 64bit Fullsoft UEFI</title>
+    <link rel="stylesheet" href="./css/master.css">
+    <link id="link1" rel="stylesheet" href="./css/light.css">
+    <link id="link2" rel="stylesheet" href="./css/color.css">
+  </head>
+  <body>
+    <h1>Bản Ghost Windows 10 Home 64bit Fullsoft UEFI</h1>
+    <div class="note">
+      Đây là bản Ghost Windows 10 Home 64bit(1909) cấu trúc UEFI sau khi đã phá gỡ <P class="inline" title="Windows Defender Antivirus + Antimalware Excutable Service">Windows Security</p> để chống ngốn các loại Disk tốc độ thấp như HDD và cài đặt thêm một số <p class="inline" title="Chrome, Photshop CS6, Atom, Microsoft Office 2019, NCH Software, Ultra ISO">phần mềm ứng dụng, tiện ích.</p> Ngoài ra còn tùy biến thêm về giao diện, chủ đề.
+    </div>
+    <p class="button" onclick="theme()" id="theme"><i>Dark mode</i></p>
+    <p class="button" onclick="color()" id="color"><i>WB mode</i></p>
+    <h2>1. Ưu điểm và Nhược điểm của bản ghost này.</h2>
+      <h3>Trước hết thì mình xin nói về nhược điểm để các bạn cân nhắc trước.</h3>
+      <ul>
+        <li>Nhược điểm thứ nhất của bản ghost này là hệ thống Windows Security (tức là bảo gồm phần mềm diệt virus mặc định Windows Defender Antivirus và dịch vụ Antimalware Excutable Service) đã bị phá gỡ. Vì vậy nếu bạn muốn phòng chống virus thì chỉ còn 2 lựa chọn duy nhất là cài thêm các phần mềm chống virus hoặc trở nên cẩn thận hơn, chỉ chạy những file có nguồn gốc rõ ràng và tin tưởng.</li>
+        <li>Còn nhược điểm thứ hai là hệ thống Windows Update đã bị vô hiệu hóa, nếu muốn cập nhật các bản vá bảo mật hoặc driver thì bạn có thể kích hoạt lại hệ thống cập nhật hoặc tải driver từ trang web của nhà phát hành.</li>
+        <li>Tuy nhiên, hai nhược điểm trên đều là để phục vụ cho mục đích giảm lag, Windows Update và Windows Security có thể nói là hai tác vụ gây ngốn ổ đĩa nhất, vậy nên các máy dùng ổ cứng HDD (hoặc một số loại ổ cứng có tốc độ thấp khác) có thể sẽ bị giật lag khi sử dụng gây ảnh hưởng đến trải nghiệm của người dùng.</li>
+        <li>Nhược điểm thứ ba là bản ghost này được ghost lại từ hệ thống Windows chuẩn UEFI nên bạn chỉ có thể cài trên ổ cứng chuẩn UEFI hoặc bạn buộc phải suy nghĩ khi bung ra ổ cứng chuẩn MBR.</li>
+      </ul>
+      <h3>Sau đây thì mình xin nói về ưu điểm của bản ghost này.</h3>
+      <ul>
+        <li>Bản ghost này bao gồm các tiện ích phổ biến và ứng dụng chuyên nghiệp và đã được "cờ rắk" sẵn từ đầu đến đuôi.</li>
+        <li>Các phần mềm gần như không thiếu một cái gì và có thể gỡ đi dễ dàng nếu bạn thực sự không cần thiết.</li>
+        <li>Trợ lí ảo Cortana đã được kích hoạt sẵn.</li>
+      </ul>
+      <h3>Và đương nhiên là bản quyền Windows đã được "kờ rắc" sẵn.</h3>
+      <img draggable="false" src="./img/img5.png" alt="Ảnh thông số máy">
+      <h3>Để hiểu rõ ràng hơn về bản ghost này, bạn có thể xem <i>Chi tiết về bản ghost</i> dưới đây.</h3>
+    <h2>2. Chi tiết về bản ghost</h2>
+      <h3>Cấu hình tối thiểu.</h3>
+        <div class="system">
+          CPU Intel® Core 2 hoặc AMD Athlon® 64 processor.
+          (Xung nhịp CPU từ 2Ghz)<br>
+          Bộ nhớ RAM từ 3GB.<br>
+          Bộ nhớ phân vùng ổ đĩa cứng từ 64GB.<br>
+        </div>
+      <h3>Cấu hình đề nghị.</h3>
+        <div class="system">
+          CPU Intel® Core i3.<br>
+          Bộ nhớ RAM từ 8GB.<br>
+          Bộ nhớ phân vùng ổ đĩa cứng từ 128GB.<br>
+        </div>
+      <h3>Các tùy biến và chỉnh sửa được ghost lại.</h3>
+      <ul>Bộ gõ chữ Telex mã hóa Unicode đã được kích hoạt sẵn (1)</ul>
+      <ul>
+        Các ứng dụng được cài đặt bao gồm: <br>
+        <li class="inline">Ultra ISO (2)</li> <i>(Đã "khờ rặk")</i> <br>
+        <li class="inline">Unikey 4.2 RC4 (3)</li> <i>(Mặc dù đã có bộ gõ Telex của Windows nhưng mình vẫn cài Unikey cho những ai cần soạn thảo bằng các bảng mã khác như Unicode tổ hợp, TCVN3,...)</i> <br>
+        <li class="inline">Bộ 4 ứng dụng chỉnh sửa và ghi đa phương tiện do NCH phát hành (4)</li> <i>(Đã "khờ rặk")</i> <br>
+        <li class="inline">Full cả bộ Microsoft Office 2019 (5)</li> <i>(Đã "khờ rặk", chỗ này mình chỉ để 3 app phổ biến nhất là Word, Excel và Powerpoint ở thanh taskbar còn các app khác thì bạn có thể tìm trong Start menu)</i> <br>
+        <li class="inline">Bộ công cụ chuyên dụng mà gần như ai ai cũng biết: Google Chrome, Photoshop CS6 chỉnh sửa ảnh chuyên nghiệp và Atom - công cụ code đắc lực của giới lập trình (6)</li>
+      </ul>
+        <img draggable="false" src="./img/img1.png" alt="Ảnh bộ ứng dụng">
+        <ul>
+          Ngoài ra, trợ lí ảo Cortana đã được kích hoạt (7)<br>
+          Chức năng Hey Cortana cũng đã được bật, bạn chỉ cần nói vào mic một câu "Hey Cortana" thì trợ lí ảo sẽ nghe lệnh bạn. <br>
+          Và hình nền được đặt là một bộ slideshow đẹp mắt.
+        </ul>
+        <img draggable="false" src="./img/img9.png" alt="Ảnh Cortana">
+      <ul>
+        Thay đổi về giao diện:
+        <li>Chủ đề được đổi thành Dark mode giúp cho hình ảnh đỡ chói.</li>
+        <li>Màu sắc được chỉnh thành một màu xanh nhìn khá hợp với chủ đề tối.</li>
+      </ul>
+      <img draggable="false" src="./img/img2.png" alt="Ảnh giao diện">
+      <ul>
+        Do tối ưu hóa được một số tác vụ chạy ngầm nên thông số sử dụng cũng được giảm đáng kể so với bản gốc (khi chưa mở ứng dụng):
+        <li>CPU chiếm dụng rất ít (chỉ dưới 1Ghz với CPU 2 lõi 4 luồng - trong hình ảnh là CPU Intel® Core i3-4170)</li>
+        <li>RAM chiếm dụng khoảng trên dưới 2GB</li>
+        <li>Ổ cứng gần như không cần hoạt động</li>
+      </ul>
+      <img draggable="false" src="./img/img3.png" alt="Ảnh Hiệu suất">
+      <ul>
+        Dưới đây là hình ảnh 3 app phổ biến nhất của bộ công cụ Microsoft Office 2019. <br>
+        Windows còn được cài sẵn thêm vài trăm bộ font chữ đẹp mắt bao gồm cả mã hóa Unicode và TCVN3.
+      </ul>
+      <img draggable="false" src="./img/img4.png" alt="Ảnh Office">
+      <ul>
+        Bốn công cụ chỉnh sửa và ghi file media do NCH phát hành (đã đăng kí giấy phép bằng "cờ rắc") bao gồm:
+        <li>Công cụ quay video màn hình Debut Video Capture Software</li>
+        <li>Công cụ chỉnh sửa video chuyên nghiệp Videopad Video Editor</li>
+        <li>Công cụ chỉnh sửa âm thanh chuyên nghiệp Wavepad Sound Editor</li>
+        <li>Công cụ ghi âm, tạo nhạc và chỉnh sửa nhạc chuyên nghiệp Mixpad Multitrack Recording Software</li>
+        <b>Dưới đây là hình ảnh</b>
+      </ul>
+      <img draggable="false" src="./img/img6.png" alt="Ảnh NCH">
+      <ul>
+        Còn đây là hình ảnh ứng dụng UltraISO Premium đã đăng kí giấy phép.
+      </ul>
+      <img draggable="false" src="./img/img7.png" alt="Ảnh UltraISO">
+      <ul>
+        Google thì dùng ngon lành nhé! <br>
+        Thậm chí còn được cài thêm 1 số tiện ích rất tiện lợi.
+      </ul>
+      <div class="gg-cont">
+        <img draggable="false" src="./img/img8.png" alt="Ảnh Google">
+        <img draggable="false" src="./img/img10.png" alt="Ảnh tiện ích Google">
+      </div>
+      <ul>
+        Photshop CS6 thì dùng khá ổn định.
+      </ul>
+      <div class="gg-cont">
+        <img draggable="false" src="./img/img13.png" alt="Ảnh khởi động PTS">
+        <img draggable="false" src="./img/img11.png" alt="Ảnh PTS">
+      </div>
+      <ul>
+        Còn Atom thì khỏi phải nói rồi, chắc chắn là ổn.
+      </ul>
+      <img draggable="false" src="./img/img12.png" alt="Ảnh Atom">
+      <ul>
+        Và cuối cùng, Windows còn được tích hợp một ứng dụng nén và giải nén vừa nhanh và nhẹ, thậm chí còn free, đó chính là 7-zip.
+      </ul>
+      <img draggable=false src="./img/img14.png" alt="Ảnh 7z">
+      <h2>3. Cách bung file ghost.</h2>
+      <h3>a) Chuẩn bị</h3>
+      <ul>
+        <li>File ghost. (<a onclick="func(link1)">Tải về</a>)</li>
+        <li>Tool OnekeyGhost. (<a onclick="func(link2)">Tải về</a>)</li>
+        <li>Mini Windows. (<a onclick="func(link3)">Tải về</a>)</li>
+        <li>Bộ nhớ ngoài khác hoặc phân vùng khác có thể boot vào Mini Windows đã tải.</li>
+        <li>Cần sao lưu dữ liệu quan trọng có trong phân vùng ổ cứng bạn sắp cài bản ghost này vào vì khi bung ghost thì phần vùng này sẽ bị xóa hết dữ liệu.</li>
+        <li>Hãy chắc chắn ổ cứng của bạn ở dạng chuẩn UEFI, nếu không hay sao lưu lại toàn bộ dữ liệu quan trọng sang ổ cứng khác và chuyển đổi ổ cứng này sang dạng chuẩn UEFI.</li>
+      </ul>
+      <h3>b) Tiến hành</h3>
+      <p><b>Bước 1.</b>Boot vào môi trường Mini Windows.</p>
+      <p><b>Bước 2.</b>Bung file ghost.</p>
+      <ul>
+        <li>Mở công cụ OnekeyGhost đã tải.</li>
+        <li>Chọn <b>Khôi phục</b> và tích vào ô <b>Ghost 64</b>.</li>
+        <li>Chọn đường dẫn tới file ghost (.GHO) đã tải.</li>
+        <li>Chọn phân vùng ổ cứng sẽ bung file ghost.</li>
+        <li>Bấm <b>Đồng ý</b> và bấm <b>Có</b> để xác nhận khi hộp thoại mới hiện lên.</li>
+      </ul>
+      <p><b>Bước 3.</b>Ngồi chờ và hưởng lấy thành quả.</p>
+      <ul>
+        <li>Hãy lấy ra một tách trà hoặc tách cà phê và ngồi nhâm nhi.</li>
+        <li>Bạn cũng có thể lấy chiếc "sờ mắc phôn" của mình ra và giết thời gian trong lúc chờ.</li>
+        <li>Đợi tới khi thông báo hoàn tất hiện lên thì bạn có thể khởi động lại máy và hưởng lấy thành quả.</li>
+      </ul>
+  </body>
+  <footer> <h1>Chúc may mắn ~</h1> </footer>
+  <div id="ctxMenu">
+    <p onclick="theme()" class="menu" id="menu1"><i>Dark mode</i></p>
+    <p onclick="color()" class="menu" id="menu2"><i>WB mode</i></p>
+  </div>
+</html>
+<script src="./js/main.js"></script>
+<script src="./js/download.js"></script>

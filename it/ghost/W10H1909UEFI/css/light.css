@@ -1,0 +1,46 @@
+* {
+  user-select: none;
+  color: #000;
+  background-color: #FFF;
+}
+
+body {
+    border: 1px black solid;
+}
+
+img {
+  border: 2px solid black;
+}
+
+h1 {
+  text-shadow: 0 0 10px black;
+}
+
+.button:hover {
+  opacity: 0.7;
+  box-shadow: 0 0 10px black;
+}
+
+.menu:hover {
+  opacity: 0.7;
+  text-shadow: 0 0 5px black;
+  border: 1px solid black;
+}
+
+.gg-cont {
+  border: 2px solid black;
+}
+
+#theme {
+  border: 2px black solid;
+  right: 7.5px;
+  top: 5px;
+}
+
+#ctxMenu {
+  border: 1px black solid;
+}
+
+#menu1 {
+
+}
