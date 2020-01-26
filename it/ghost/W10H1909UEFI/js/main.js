@@ -27,8 +27,8 @@ function color() {
 document.addEventListener('contextmenu', function(e) {
   var ctxMenu = document.getElementById("ctxMenu");
   ctxMenu.style.display = "block";
-  ctxMenu.style.left = (event.pageX)+"px";
-  ctxMenu.style.top = (event.pageY)+"px";
+  ctxMenu.style.left = (event.pageX-125)+"px";
+  ctxMenu.style.top = (event.pageY-85)+"px";
   e.preventDefault();
 }, false);
 document.addEventListener('click', function(e) {
@@ -36,3 +36,25 @@ document.addEventListener('click', function(e) {
   var ctxMenu = document.getElementById("ctxMenu");
   ctxMenu.style.display = "none";
 }, false);
+document.addEventListener('scroll', function(e) {
+  e.preventDefault();
+  var ctxMenu = document.getElementById("ctxMenu");
+  ctxMenu.style.display = "none";
+}, false);
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("top").style.top = "100px";
+  } else {
+    document.getElementById("top").style.top = "-100px";
+  }
+  prevScrollpos = currentScrollPos;
+}

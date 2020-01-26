@@ -1,5 +1,4 @@
 * {
-  user-select: none;
   color: #000;
   background-color: #FFF;
 }
@@ -33,14 +32,52 @@ h1 {
 
 #theme {
   border: 2px black solid;
-  right: 7.5px;
-  top: 5px;
 }
 
 #ctxMenu {
   border: 1px black solid;
 }
 
-#menu1 {
+#color {
+  background-color: white !important;
+  border: 2px black solid;
+  right: 7.5px;
+  bottom: 10px;
+}
 
+#color i {
+  color: black !important;
+  background-color: white !important;
+}
+
+#top {
+  border: 2px solid black;
+  background-color: #fff;
+  color: black;
+}
+
+#navbar {
+  left: 0;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+}
+
+#navbar p {
+  float: left;
+  background-color: #333;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar p:hover {
+  background-color: #ddd;
+  color: black;
 }

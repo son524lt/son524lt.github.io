@@ -14,7 +14,7 @@
     </div>
     <p class="button" onclick="theme()" id="theme"><i>Dark mode</i></p>
     <p class="button" onclick="color()" id="color"><i>WB mode</i></p>
-    <h2>1. Ưu điểm và Nhược điểm của bản ghost này.</h2>
+    <h2 id="section1">1. Ưu điểm và Nhược điểm của bản ghost này.</h2>
       <h3>Trước hết thì mình xin nói về nhược điểm để các bạn cân nhắc trước.</h3>
       <ul>
         <li>Nhược điểm thứ nhất của bản ghost này là hệ thống Windows Security (tức là bảo gồm phần mềm diệt virus mặc định Windows Defender Antivirus và dịch vụ Antimalware Excutable Service) đã bị phá gỡ. Vì vậy nếu bạn muốn phòng chống virus thì chỉ còn 2 lựa chọn duy nhất là cài thêm các phần mềm chống virus hoặc trở nên cẩn thận hơn, chỉ chạy những file có nguồn gốc rõ ràng và tin tưởng.</li>
@@ -30,8 +30,8 @@
       </ul>
       <h3>Và đương nhiên là bản quyền Windows đã được "kờ rắc" sẵn.</h3>
       <img draggable="false" src="./img/img5.png" alt="Ảnh thông số máy">
-      <h3>Để hiểu rõ ràng hơn về bản ghost này, bạn có thể xem <i>Chi tiết về bản ghost</i> dưới đây.</h3>
-    <h2>2. Chi tiết về bản ghost</h2>
+      <h3>Để hiểu rõ ràng hơn về bản ghost này, bạn có thể xem <i onclick="go(2)">Chi tiết về bản ghost</i> dưới đây.</h3>
+    <h2 id="section2">2. Chi tiết về bản ghost</h2>
       <h3>Cấu hình tối thiểu.</h3>
         <div class="system">
           CPU Intel® Core 2 hoặc AMD Athlon® 64 processor.
@@ -116,7 +116,7 @@
         Và cuối cùng, Windows còn được tích hợp một ứng dụng nén và giải nén vừa nhanh và nhẹ, thậm chí còn free, đó chính là 7-zip.
       </ul>
       <img draggable=false src="./img/img14.png" alt="Ảnh 7z">
-      <h2>3. Cách bung file ghost.</h2>
+      <h2 id="section3">3. Cách bung file ghost.</h2>
       <h3>a) Chuẩn bị</h3>
       <ul>
         <li>File ghost. (<a onclick="func(link1)">Tải về</a>)</li>
@@ -142,6 +142,12 @@
         <li>Bạn cũng có thể lấy chiếc "sờ mắc phôn" của mình ra và giết thời gian trong lúc chờ.</li>
         <li>Đợi tới khi thông báo hoàn tất hiện lên thì bạn có thể khởi động lại máy và hưởng lấy thành quả.</li>
       </ul>
+    <div id="top" class="button" onclick="gotop()">Trở về đầu trang</div>
+    <div id="navbar">
+      <p onclick="go(1)">Ưu và nhược điểm</p>
+      <p onclick="go(2)">Chi tiết về bản ghost</p>
+      <p onclick="go(3)">Cách bung file ghost</p>
+    </div>
   </body>
   <footer> <h1>Chúc may mắn ~</h1> </footer>
   <div id="ctxMenu">
@@ -150,4 +156,4 @@
   </div>
 </html>
 <script src="./js/main.js"></script>
-<script src="./js/download.js"></script>
+<script src="./js/link.js"></script>

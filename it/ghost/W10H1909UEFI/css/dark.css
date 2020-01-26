@@ -1,5 +1,4 @@
 * {
-  user-select: none;
   color: #FFF;
   background-color: #111;
 }
@@ -31,12 +30,54 @@ h1 {
   border: 2px solid white;
 }
 
+#color {
+  background-color: black !important;
+  border: 2px white solid;
+  right: 7.5px;
+  bottom: 10px;
+}
+
+#color i {
+  color: white !important;
+  background-color: black !important;
+}
+
 #ctxMenu {
   border: 1px white solid;
 }
 
+#top {
+  border: 2px solid #FFF;
+  background-color: #000;
+  color: #fff;
+}
+
 #theme {
   border: 2px white solid;
-  right: 7.5px;
-  top: 5px;
+}
+
+#navbar {
+  left: 0;
+  background-color: #aaa;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+}
+
+#navbar p {
+  float: left;
+  background-color: #aaa;
+  display: block;
+  color: #333;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar p:hover {
+  background-color: #333;
+  color: white;
 }

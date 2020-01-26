@@ -2,3 +2,15 @@ img {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
+
+#color {
+  background-color: cyan !important;
+  border: 2px red solid;
+  right: 7.5px;
+  bottom: 10px;
+}
+
+#color i {
+  color: blue !important;
+  background-color: cyan !important;
+}
