@@ -3,6 +3,11 @@
   background-color: #111;
 }
 
+i a {
+  color: #FFF;
+  background-color: #111;
+}
+
 body {
     border: 1px white solid;
 }
@@ -66,7 +71,7 @@ h1 {
   transition: top 0.3s;
 }
 
-#navbar p {
+#navbar a {
   float: left;
   background-color: #aaa;
   display: block;
@@ -77,7 +82,7 @@ h1 {
   font-size: 17px;
 }
 
-#navbar p:hover {
+#navbar a:hover {
   background-color: #333;
   color: white;
 }

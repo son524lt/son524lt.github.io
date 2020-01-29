@@ -6,10 +6,6 @@ function func(i) {
   window.open(i);
 }
 
-function go(u) {
-  window.location.assign("./index.html#section" + u.toString());
-}
-
 function gotop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
