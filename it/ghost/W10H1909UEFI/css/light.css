@@ -3,11 +3,6 @@
   background-color: #FFF;
 }
 
-i a {
-  color: #000;
-  background-color: #FFF;
-}
-
 body {
     border: 1px black solid;
 }
@@ -71,7 +66,7 @@ h1 {
   transition: top 0.3s;
 }
 
-#navbar a {
+#navbar p {
   float: left;
   background-color: #333;
   display: block;
@@ -82,7 +77,7 @@ h1 {
   font-size: 17px;
 }
 
-#navbar a:hover {
+#navbar p:hover {
   background-color: #ddd;
   color: black;
 }

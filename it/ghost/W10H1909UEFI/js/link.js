@@ -10,3 +10,7 @@ function gotop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+function go(u) {
+  window.location.assign("#section" + u);
+}

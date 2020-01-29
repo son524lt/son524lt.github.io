@@ -2,11 +2,11 @@ function theme() {
   var i = document.getElementById('theme').innerHTML;
   if (i == "<i>Light mode</i>") {
     document.getElementById('theme').innerHTML = "<i>Dark mode</i>";
-    document.getElementById('menu1').innerHTML = "<i>Dark mode</i>"
+    document.getElementById('menu1').innerHTML = "<i>Dark mode</i>";
     document.getElementById('link1').href = "./css/light.css";
   } else {
-    document.getElementById('theme').innerHTML = "<i>Light mode</i>"
-    document.getElementById('menu1').innerHTML = "<i>Light mode</i>"
+    document.getElementById('theme').innerHTML = "<i>Light mode</i>";
+    document.getElementById('menu1').innerHTML = "<i>Light mode</i>";
     document.getElementById('link1').href = "./css/dark.css";
   }
 }
