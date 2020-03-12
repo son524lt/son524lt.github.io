@@ -35,12 +35,12 @@ function sortTable(n) {
 	}
 };
 
-function drop() {
-		if (document.getElementById("drop").className == "hide") {
-				document.getElementById("drop").className = "show";
-				document.getElementById("m").innerHTML = "Hide";
-			} else {
-				document.getElementById("drop").className = "hide";
-				document.getElementById("m").innerHTML = "More";
-			}
-		}
+document.getElementById("email").addEventListener('dblclick', function(e) {
+	window.location.assign("mailto:son524lt@gmail.com");
+}, false);
+
+document.getElementById("email").addEventListener('contextmenu', function(e) {
+document.execCommand("copy");
+alert("Email has been copied.");
+e.preventDefault();
+}, false);
