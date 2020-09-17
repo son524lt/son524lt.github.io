@@ -16,7 +16,6 @@ function add() {
 
 function sort() {
   n = A.length;
-  B = A;
   while (n >= 2) {
     n--;
     for (var i = 0; i <= n ; i++) {
@@ -35,17 +34,17 @@ function del1() {
   A.shift();
   n = A.length;
   document.getElementById('str').innerHTML = A.toString();
-  if (n==0) {
-    document.getElementById('appear1').className = "hide";
-    document.getElementById('appear2').className = "hide";
-    document.getElementById('str').innerHTML = "(chưa có số)";
-  }
+  show_hide();
 }
 
 function del2() {
   A.pop()
   n = A.length;
   document.getElementById('str').innerHTML = A.toString();
+  show_hide();
+}
+
+function show_hide() {
   if (n==0) {
     document.getElementById('appear1').className = "hide";
     document.getElementById('appear2').className = "hide";
