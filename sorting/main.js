@@ -1,7 +1,7 @@
 var A = [];
 var B = [];
 var alt;
-var text = document.getElementById('kq').innerHTML;
+var text = document.getElementById('kq');
 
 function add() {
   var b = document.getElementById('num').value;
@@ -27,25 +27,23 @@ function sort() {
       }
     }
   }
-  document.getElementById('kq').innerHTML = "Kết quả:" + B.toString();
+  text.innerHTML = "Kết quả:" + B.toString();
   document.getElementById('appear3').className = "show";
 }
 
 function del1() {
   A.shift();
-  n = A.length;
-  document.getElementById('str').innerHTML = A.toString();
   show_hide();
 }
 
 function del2() {
   A.pop()
-  n = A.length;
-  document.getElementById('str').innerHTML = A.toString();
   show_hide();
 }
 
 function show_hide() {
+  n = A.length;
+  document.getElementById('str').innerHTML = A.toString();
   if (n==0) {
     document.getElementById('appear1').className = "hide";
     document.getElementById('appear2').className = "hide";
