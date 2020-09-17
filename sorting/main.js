@@ -16,6 +16,7 @@ function add() {
 
 function sort() {
   n = A.length;
+  B=A;
   while (n >= 2) {
     n--;
     for (var i = 0; i <= n ; i++) {
