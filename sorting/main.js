@@ -1,7 +1,7 @@
 var A = [];
 var B = [];
 var alt;
-var text = document.getElementById('kq').innerHTML;
+var text = document.getElementById('kq');
 
 function add() {
   var b = document.getElementById('num').value;
@@ -16,7 +16,7 @@ function add() {
 
 function sort() {
   n = A.length;
-  B = A;
+  B=A;
   while (n >= 2) {
     n--;
     for (var i = 0; i <= n ; i++) {
@@ -27,23 +27,21 @@ function sort() {
       }
     }
   }
-  document.getElementById('kq').innerHTML = "Kết quả:" + B.toString();
+  text.innerHTML = "Kết quả:" + B.toString();
   document.getElementById('appear3').className = "show";
 }
 
 function del1() {
   A.shift();
-  n = A.length;
-  document.getElementById('str').innerHTML = A.toString();
-  if (n==0) {
-    document.getElementById('appear1').className = "hide";
-    document.getElementById('appear2').className = "hide";
-    document.getElementById('str').innerHTML = "(chưa có số)";
-  }
+  show_hide();
 }
 
 function del2() {
   A.pop()
+  show_hide();
+}
+
+function show_hide() {
   n = A.length;
   document.getElementById('str').innerHTML = A.toString();
   if (n==0) {
